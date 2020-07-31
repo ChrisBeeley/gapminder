@@ -25,6 +25,9 @@ if(!file.exists("geocodedData.Rdata")){
   load("geocodedData.Rdata")
 }
 
+mapData <- mapData %>% 
+  ungroup()
+
 function(input, output) {
   
   # produce data
